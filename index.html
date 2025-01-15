@@ -2,10 +2,29 @@
 <html lang="es">
 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Frankfurt Junior</title>
+    <title>Bar Frankfurt Junior | Tapas, Bocadillos y Más</title>
+    <meta name="description"
+        content="Descubre el Bar Frankfurt Junior, el lugar ideal para disfrutar de tapas, bocadillos y platos combinados. Calidad, sabor y buen ambiente en un solo lugar.">
     <link rel="icon" href="logo2.png" type="image/png">
+
+    <!-- SEO 
+    <meta name="keywords"
+        content="Bar Frankfurt Junior, tapas, bocadillos, platos combinados, comida casera, bar en Vallès, ambiente familiar">
+    <meta name="author" content="Bar Frankfurt Junior">
+    <meta name="robots" content="index, follow">-->
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="Bar Frankfurt Junior | Tapas, Bocadillos y Más">
+    <meta property="og:description"
+        content="Disfruta de nuestras deliciosas tapas, bocadillos y platos combinados. ¡Visítanos para vivir una experiencia gastronómica inolvidable!">
+    <meta property="og:image" content="logo2.png">
+    <meta property="og:url" content="https://tu-sitio-web.com">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+
     <style>
         /* Global styles */
         * {
@@ -209,16 +228,74 @@
         }
 
         footer {
-            background-color: #7b1fa2;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 1rem;
-            color: #ffffff;
-            font-size: 0.9rem;
+        }
+
+        footer .social-media {
+            margin-bottom: 10px;
+        }
+
+        footer .social-media a {
+            margin: 0 10px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        footer .social-media svg {
+            transition: transform 0.3s ease;
+        }
+
+        footer .social-media svg:hover {
+            transform: scale(1.2);
+        }
+
+        footer p {
+            font-size: 14px;
+            margin: 0;
         }
 
         /* Scroll behavior */
         html {
             scroll-behavior: smooth;
+        }
+
+        #licores .menu-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+            text-align: left;
+        }
+
+        #licores .menu-table th {
+            font-weight: bold;
+            font-size: 1em;
+            color: #333;
+            text-align: center;
+        }
+
+        #licores .menu-table td {
+            padding: 0.5em;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #licores .menu-table tbody td:first-child {
+            text-align: left;
+            font-size: 1em;
+            font-weight: bold;
+            color: #222;
+        }
+
+        #licores .menu-table tbody td:not(:first-child) {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        #licores .menu-table tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
     </style>
 </head>
@@ -238,11 +315,15 @@
             <a class="menu-links" href="#tapas">Tapas</a>
             <a class="menu-links" href="#bebidas">Bebidas</a>
             <a class="menu-links" href="#cervezas" style="margin-left: 1rem !important">Cervezas</a>
+            <a class="menu-links" href="#cafe-y-pastas" style="margin-left: 1rem !important">Café y pastas</a>
+            <a class="menu-links" href="#licores" style="margin-left: 1rem !important">Licores</a>
             <a class="menu-links" href="#bocadillos-calientes">Bocadillos Calientes</a>
             <a class="menu-links" href="#bocadillos-frios">Bocadillos Frios</a>
             <a class="menu-links" href="#platos-combinados">Platos Combinados</a>
             <a class="menu-links" href="#duos">Dúos</a>
             <a class="menu-links" href="#combos">Combos</a>
+            <a class="menu-links" href="#snacks">Snacks</a>
+            <a class="menu-links" href="#huevos-rotos">Huevos Rotos</a>
             <!-- Fin de opciones que irán dentro de "Menú"-->
         </div>
     </nav>
@@ -328,12 +409,80 @@
             <div class="menu-category" id="bebidas">
                 <h3>Bebidas</h3>
                 <div class="menu-item">
-                    <h4>Tapa 1</h4>
-                    <span class="price">X€</span>
+                    <h4>Agua con gas</h4>
+                    <span class="price">1,50€</span>
                 </div>
                 <div class="menu-item">
-                    <h4>Tapa 2</h4>
-                    <span class="price">X€</span>
+                    <h4>Agua pequeña</h4>
+                    <span class="price">1,10€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Agua grande</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vichy Catalán</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Agua pequeña</h4>
+                    <span class="price">1,10€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Coca-Cola</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Coca-Cola Zero</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Fanta Naranja</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Fanta Limón</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Nestea</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Powerade Ice</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bitter Kas</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Aquarius</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cacaolat</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tónica</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Zumo</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vino Marqués tinto</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vino Valderiver Verdejo</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vino Valderivero roble</h4>
+                    <span class="price">2,70€</span>
                 </div>
             </div>
             <div class="menu-category" id="cervezas">
@@ -352,7 +501,7 @@
                 </div>
                 <div class="menu-item">
                     <h4>Copa cerveza</h4>
-                    <span class="price">2,0€</span>
+                    <span class="price">2,00€</span>
                 </div>
                 <div class="menu-item">
                     <h4>Jarra Cerveza</h4>
@@ -397,6 +546,251 @@
                 <div class="menu-item">
                     <h4>Tostada 0,0 500cl</h4>
                     <span class="price">4,50€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="licores">
+                <h3>Licores</h3>
+                <p class="category-description">Elige tu licor y disfruta como prefieras: chupito, copa o combinado.</p>
+                <table class="menu-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Chupito</th>
+                            <th>Copa</th>
+                            <th>Combinado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Anís del mono</td>
+                            <td>2,50€</td>
+                            <td>3,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Ruavieja herves</td>
+                            <td>3,00€</td>
+                            <td>4,50€</td>
+                            <td>6,50€</td>
+                        </tr>
+                        <tr>
+                            <td>Licor 43</td>
+                            <td></td>
+                            <td>4,50€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Licor 43</td>
+                            <td></td>
+                            <td>4,50€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Llima Rives</td>
+                            <td>3,50</td>
+                            <td>5,50€</td>
+                            <td>8,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Martini Blanco</td>
+                            <td></td>
+                            <td></td>
+                            <td>3,25€</td>
+                        </tr>
+                        <tr>
+                            <td>Martini Rosso</td>
+                            <td></td>
+                            <td></td>
+                            <td>3,25€</td>
+                        </tr>
+                        <tr>
+                            <td>Patxarán</td>
+                            <td>2,50€</td>
+                            <td>3,50</td>
+                            <td>4,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Bacardí</td>
+                            <td>3,00€</td>
+                            <td></td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Negrita</td>
+                            <td>2,50€</td>
+                            <td>3,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Ron Pujol</td>
+                            <td>2,50€</td>
+                            <td>3,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Ron cacique</td>
+                            <td>2,60€</td>
+                            <td>3,50€</td>
+                            <td>7,50€</td>
+                        </tr>
+                        <tr>
+                            <td>Vodka Smirnoff</td>
+                            <td>3,00€</td>
+                            <td>5,00€</td>
+                            <td>7,50€</td>
+                        </tr>
+                        <tr>
+                            <td>Ballantines</td>
+                            <td>2,60€</td>
+                            <td>4,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>DEWAR'S W. Label</td>
+                            <td>2,60€</td>
+                            <td>4,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>J&B</td>
+                            <td>2,60€</td>
+                            <td>4,00€</td>
+                            <td>7,00€</td>
+                        </tr>
+                        <tr>
+                            <td>J. Walker Red</td>
+                            <td>3,50</td>
+                            <td>5,50€</td>
+                            <td>8,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Malibú</td>
+                            <td></td>
+                            <td></td>
+                            <td>8,00€</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Daniel's</td>
+                            <td>4,00€</td>
+                            <td>6,50€</td>
+                            <td>8,50€</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="menu-category" id="cafe-y-pastas">
+                <h3>Café y Pastas</h3>
+                <div class="menu-item">
+                    <h4>Café solo</h4>
+                    <span class="price">1,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cortado</h4>
+                    <span class="price">1,45€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Café con leche</h4>
+                    <span class="price">1,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Vaso de leche</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cola-Cao</h4>
+                    <span class="price">1,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Americano</h4>
+                    <span class="price">1,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Capucchino</h4>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bonbom</h4>
+                    <span class="price">1,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Carajillo Baileys</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Carajillo ron Pujol</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Carajillo Whiskey/JB/Ballantines</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Carajillo anís</h4>
+                    <span class="price">2,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Trifásico Baileys</h4>
+                    <span class="price">2,60€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Trifásico Whiskey - JB - Ballantines</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Trifásico Anis - Cognac</h4>
+                    <span class="price">1,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Infusión</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Café doble</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chocolate</h4>
+                    <span class="price">2,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Café con hielo</h4>
+                    <span class="price">1,55€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Hielo</h4>
+                    <span class="price">0,15€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Donut azúcar</h4>
+                    <span class="price">1,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Donut chocolate</h4>
+                    <span class="price">1,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croissant mantequilla</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croissant chocolate</h4>
+                    <span class="price">2,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croissant artesano manteca</h4>
+                    <span class="price">1,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Magdalena casera</h4>
+                    <span class="price">1,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Ración churros (4 uds.)</h4>
+                    <span class="price">3,25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Magdaelna aceite de oliva</h4>
+                    <span class="price">1,30€</span>
                 </div>
             </div>
             <div class="menu-category" id="bocadillos-calientes">
@@ -531,13 +925,87 @@
             </div>
             <div class="menu-category" id="platos-combinados">
                 <h3>Platos Combinados</h3>
+                <p class="category-description">Incluyen patatas, pimientos y huevos.</p>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <h4>Butifarra del Vallès</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Lomo</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Panceta</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Malagueño (Butifarra negra)</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pechuga de Pollo</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Doña Croqueta</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Hamburguesa (2 a elegir)</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                    <div class="menu-item">
+                        <h4>Pincho Moruno</h4>
+                        <span class="price">9,90€</span>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-category" id="snacks">
+                <h3>Snacks</h3>
                 <div class="menu-item">
-                    <h4>Tapa 1</h4>
-                    <span class="price">X€</span>
+                    <h4>Patatas fritas</h4>
+                    <span class="price">1,25€</span>
                 </div>
                 <div class="menu-item">
-                    <h4>Tapa 2</h4>
-                    <span class="price">X€</span>
+                    <h4>Cchiarricos (50grs)</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Alamendra sal (40 grs)</h4>
+                    <span class="price">2,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cacahuete sal (40 grs)</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Aceituna gazpacha</h4>
+                    <span class="price">1,25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chpua-Chups</h4>
+                    <span class="price">0,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Trident gragea menta</h4>
+                    <span class="price">1,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Haribbo</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Kit-Kat</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Oreo</h4>
+                    <span class="price">1,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Platanitos chip</h4>
+                    <span class="price">2,00€</span>
                 </div>
             </div>
             <div class="menu-category" id="duos">
@@ -608,6 +1076,33 @@
                     <span class="price">X€</span>
                 </div>
             </div>
+            <div class="menu-category" id="huevos-rotos">
+                <h3>Huevos Rotos</h3>
+                <div class="menu-item">
+                    <h4>Con chistorra</h4>
+                    <span class="price">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Con morcilla</h4>
+                    <span class="price">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Con paletilla ibérica</h4>
+                    <span class="price">9,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Con pisto</h4>
+                    <span class="price">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Con frankfurt</h4>
+                    <span class="price">7,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Con panceta</h4>
+                    <span class="price">7,50€</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -617,7 +1112,33 @@
     </section>
 
     <footer>
-        © 2025 Bar Frankfurt Junior. Todos los derechos reservados.
+        <div class="social-media">
+            <a href="https://facebook.com/tu-pagina" target="_blank" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="#3b5998">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H15V13.9999H17.0762C17.5066 13.9999 17.8887 13.7245 18.0249 13.3161L18.4679 11.9871C18.6298 11.5014 18.2683 10.9999 17.7564 10.9999H15V8.99992C15 8.49992 15.5 7.99992 16 7.99992H18C18.5523 7.99992 19 7.5522 19 6.99992V6.31393C19 5.99091 18.7937 5.7013 18.4813 5.61887C17.1705 5.27295 16 5.27295 16 5.27295C13.5 5.27295 12 6.99992 12 8.49992V10.9999H10C9.44772 10.9999 9 11.4476 9 11.9999V12.9999C9 13.5522 9.44771 13.9999 10 13.9999H12V21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" />
+                </svg>
+            </a>
+            <a href="https://instagram.com/tu-pagina" target="_blank" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="#E4405F">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" />
+                    <path
+                        d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M1.65396 4.27606C1 5.55953 1 7.23969 1 10.6V13.4C1 16.7603 1 18.4405 1.65396 19.7239C2.2292 20.8529 3.14708 21.7708 4.27606 22.346C5.55953 23 7.23969 23 10.6 23H13.4C16.7603 23 18.4405 23 19.7239 22.346C20.8529 21.7708 21.7708 20.8529 22.346 19.7239C23 18.4405 23 16.7603 23 13.4V10.6C23 7.23969 23 5.55953 22.346 4.27606C21.7708 3.14708 20.8529 2.2292 19.7239 1.65396C18.4405 1 16.7603 1 13.4 1H10.6C7.23969 1 5.55953 1 4.27606 1.65396C3.14708 2.2292 2.2292 3.14708 1.65396 4.27606ZM13.4 3H10.6C8.88684 3 7.72225 3.00156 6.82208 3.0751C5.94524 3.14674 5.49684 3.27659 5.18404 3.43597C4.43139 3.81947 3.81947 4.43139 3.43597 5.18404C3.27659 5.49684 3.14674 5.94524 3.0751 6.82208C3.00156 7.72225 3 8.88684 3 10.6V13.4C3 15.1132 3.00156 16.2777 3.0751 17.1779C3.14674 18.0548 3.27659 18.5032 3.43597 18.816C3.81947 19.5686 4.43139 20.1805 5.18404 20.564C5.49684 20.7234 5.94524 20.8533 6.82208 20.9249C7.72225 20.9984 8.88684 21 10.6 21H13.4C15.1132 21 16.2777 20.9984 17.1779 20.9249C18.0548 20.8533 18.5032 20.7234 18.816 20.564C19.5686 20.1805 20.1805 19.5686 20.564 18.816C20.7234 18.5032 20.8533 18.0548 20.9249 17.1779C20.9984 16.2777 21 15.1132 21 13.4V10.6C21 8.88684 20.9984 7.72225 20.9249 6.82208C20.8533 5.94524 20.7234 5.49684 20.564 5.18404C20.1805 4.43139 19.5686 3.81947 18.816 3.43597C18.5032 3.27659 18.0548 3.14674 17.1779 3.0751C16.2777 3.00156 15.1132 3 13.4 3Z" />
+                </svg>
+            </a>
+            <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 24 24" fill="#25D366">
+                    <path
+                        d="M6.014 8.00613C6.12827 7.1024 7.30277 5.87414 8.23488 6.01043L8.23339 6.00894C9.14051 6.18132 9.85859 7.74261 10.2635 8.44465C10.5504 8.95402 10.3641 9.4701 10.0965 9.68787C9.7355 9.97883 9.17099 10.3803 9.28943 10.7834C9.5 11.5 12 14 13.2296 14.7107C13.695 14.9797 14.0325 14.2702 14.3207 13.9067C14.5301 13.6271 15.0466 13.46 15.5548 13.736C16.3138 14.178 17.0288 14.6917 17.69 15.27C18.0202 15.546 18.0977 15.9539 17.8689 16.385C17.4659 17.1443 16.3003 18.1456 15.4542 17.9421C13.9764 17.5868 8 15.27 6.08033 8.55801C5.97237 8.24048 5.99955 8.12044 6.014 8.00613Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 23C10.7764 23 10.0994 22.8687 9 22.5L6.89443 23.5528C5.56462 24.2177 4 23.2507 4 21.7639V19.5C1.84655 17.492 1 15.1767 1 12C1 5.92487 5.92487 1 12 1C18.0751 1 23 5.92487 23 12C23 18.0751 18.0751 23 12 23ZM6 18.6303L5.36395 18.0372C3.69087 16.4772 3 14.7331 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C11.0143 21 10.552 20.911 9.63595 20.6038L8.84847 20.3397L6 21.7639V18.6303Z" />
+                </svg>
+            </a>
+        </div>
+        <p>© 2025 Bar Frankfurt Junior. Todos los derechos reservados.</p>
     </footer>
 
     <script>
