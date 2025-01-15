@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bar Frankfurt Junior</title>
+    <link rel="icon" href="logo2.png" type="image/png">
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #4a148c;
+            line-height: 1.6;
+        }
+
+        /* Navbar styles */
+        .navbar {
+            background-color: #7b1fa2;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+        .logo-img {
+            width: 60px;
+            margin-right: 2px;
+        }
+
+
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #f3e8ff;
+        }
+
+        .menu-links {
+            font-size: 0.9rem;
+            margin-top: 0.1rem !important;
+            margin-left: 0.5rem !important;
+            margin-bottom: 0.1rem !important;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 1rem;
+                background-color: #7b1fa2;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                width: 100%;
+                padding: 1rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+        /* Hero section */
+        .hero {
+            background: linear-gradient(rgba(45, 27, 77, 0.8), rgba(45, 27, 77, 0.8)),
+                url('logo.png') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            color: #ffffff;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        /* Menu section */
+        .menu-section {
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .menu-section h2 {
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            color: #7b1fa2;
+        }
+
+        .menu-category {
+            background-color: #ede7f6;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .menu-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.2rem;
+            color: #6a1b9a;
+        }
+
+        .category-description {
+            font-size: 0.95rem;
+            color: #9575cd;
+            margin-bottom: 1rem;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #d1c4e9;
+            padding-bottom: 0.5rem;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item p {
+            font-size: 0.8rem;
+            color: #000000;
+            margin: 0.3rem 0.3rem 0 0.3rem;
+        }
+
+        .menu-item h4 {
+            font-size: 0.9rem;
+            margin: 0;
+            color: #4a148c;
+        }
+
+        .menu-item .price {
+            color: #7b1fa2;
+            font-weight: bold;
+        }
+
+        /* Contact section */
+        .contact {
+            background-color: #ede7f6;
+            padding: 2rem;
+            text-align: center;
+            color: #4a148c;
+        }
+
+        .contact h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #6a1b9a;
+        }
+
+        .contact p {
+            max-width: 500px;
+            margin: 0 auto;
+            color: #4a148c;
+        }
+
+        footer {
+            background-color: #7b1fa2;
+            text-align: center;
+            padding: 1rem;
+            color: #ffffff;
+            font-size: 0.9rem;
+        }
+
+        /* Scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo2.png" alt="Logo" class="logo-img">
+            <!-- Asegúrate de poner la ruta correcta de la imagen -->
+            Bar Frankfurt Junior
+        </div>
+        <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+        <div class="nav-links">
+            <a href="#contact">Contacto</a>
+            <a href="#menu">Menú</a>
+            <!-- Opciones que irán dentro de "Menú"-->
+            <a class="menu-links" href="#tapas">Tapas</a>
+            <a class="menu-links" href="#bebidas">Bebidas</a>
+            <a class="menu-links" href="#cervezas" style="margin-left: 1rem !important">Cervezas</a>
+            <a class="menu-links" href="#bocadillos-calientes">Bocadillos Calientes</a>
+            <a class="menu-links" href="#bocadillos-frios">Bocadillos Frios</a>
+            <a class="menu-links" href="#platos-combinados">Platos Combinados</a>
+            <a class="menu-links" href="#duos">Dúos</a>
+            <a class="menu-links" href="#combos">Combos</a>
+            <!-- Fin de opciones que irán dentro de "Menú"-->
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>Bienvenido a Bar Frankfurt Junior</h2>
+            <p>El mejor lugar para disfrutar con familia y amigos.</p>
+        </div>
+    </section>
+
+    <section id="menu" class="menu-section">
+
+        <h2>Nuestro Menú</h2>
+        <div class="menu-grid">
+            <div class="menu-category" id="tapas">
+                <h3>Tapas</h3>
+                <div class="menu-item">
+                    <h4>Morros</h4>
+                    <span class="price">5,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chocos</h4>
+                    <span class="price">6,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Fingers de pollo (5 uds.)</h4>
+                    <span class="price">5,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croquetas pollo rustido (5 uds.)</h4>
+                    <span class="price">7.25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croquetas rabo de toro (5 uds.)</h4>
+                    <span class="price">7.25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Croquetas bacalao (5 uds.)</h4>
+                    <span class="price">7.25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Pincho tortilla</h4>
+                    <span class="price">4,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Salchipapas</h4>
+                    <span class="price">5,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bravas</h4>
+                    <span class="price">4,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Callos</h4>
+                    <span class="price">7,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Mejillones tigre</h4>
+                    <span class="price">6,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Boquerones fritos</h4>
+                    <span class="price">6,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Pincho tortilla de patatas</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cono de patatas fritas caseras</h4>
+                    <span class="price">3,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Rejos y anillas (a la andaluza)</h4>
+                    <span class="price">6,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bien me sabe (cazón)</h4>
+                    <span class="price">6,90€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="bebidas">
+                <h3>Bebidas</h3>
+                <div class="menu-item">
+                    <h4>Tapa 1</h4>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tapa 2</h4>
+                    <span class="price">X€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="cervezas">
+                <h3>Cervezas</h3>
+                <div class="menu-item">
+                    <h4>Mediana</h4>
+                    <span class="price">2,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Quinto</h4>
+                    <span class="price">1,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Caña cerveza</h4>
+                    <span class="price">1,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Copa cerveza</h4>
+                    <span class="price">2,0€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Jarra Cerveza</h4>
+                    <span class="price">4,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Caña clara</h4>
+                    <span class="price">1,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Copa clara</h4>
+                    <span class="price">2,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Jarra clara</h4>
+                    <span class="price">4,20€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Caña cerveza 0,0</h4>
+                    <span class="price">1,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Copa clara 0,0</h4>
+                    <span class="price">2,40€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Jarra cerveza 0,0</h4>
+                    <span class="price">4,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cerveza 1906</h4>
+                    <span class="price">2,60€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Estrella 500cl</h4>
+                    <span class="price">4,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Estrella clara 500cl</h4>
+                    <span class="price">4,30€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tostada 0,0 500cl</h4>
+                    <span class="price">4,50€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="bocadillos-calientes">
+                <h3>Bocadillos calientes</h3>
+                <div class="menu-item">
+                    <h4>Lomo</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bacon</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chistorra</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Panceta</h4>
+                    <span class="price">4,95€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Salchichas Pais</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Brawtwurts</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Frankfurt</h4>
+                    <span class="price">3,60€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Cervela</h4>
+                    <span class="price">4,60€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Pikantwurst</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Krakosky</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Malagueña</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Butifarra Vallès</h4>
+                    <span class="price">4,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tex-Wurt (cervela picante)</h4>
+                    <span class="price">4,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tortilla francesa</h4>
+                    <span class="price">4,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tortilla de patatas</h4>
+                    <span class="price">4,70€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Hamburguesa</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Hamburguesa moruna</h4>
+                    <span class="price">4,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Hamburguesa picante</h4>
+                    <span class="price">4,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Pinchos morunos</h4>
+                    <span class="price">4,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Pechufa de pollo rebozada</h4>
+                    <span class="price">4,80€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Bikini</h4>
+                    <span class="price">3,50€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="bocadillos-frios">
+                <h3>Bocadillos frios</h3>
+                <div class="menu-item">
+                    <h4>Jamón serrano</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Jamón york</h4>
+                    <span class="price">4,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Atún</h4>
+                    <span class="price">4,50€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Queso Edam</h4>
+                    <span class="price">4,00€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Lomo ibérico</h4>
+                    <span class="price">5,90€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Jamón ibérico</h4>
+                    <span class="price">6,25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Queso semi-manchego</h4>
+                    <span class="price">4,95€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Chorizo ibérico</h4>
+                    <span class="price">4,25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Salchichón ibérico</h4>
+                    <span class="price">4,25€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Loganiza pagès</h4>
+                    <span class="price">4,50€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="platos-combinados">
+                <h3>Platos Combinados</h3>
+                <div class="menu-item">
+                    <h4>Tapa 1</h4>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Tapa 2</h4>
+                    <span class="price">X€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="duos">
+                <h3>Dúos</h3>
+                <p class="category-description">Todos los dúos incluyen 2 bebidas.</p>
+                <div class="menu-item">
+                    <h4>Duo 1</h4>
+                    <p>Cazón y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 2</h4>
+                    <p>Chocos y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 3</h4>
+                    <p>Rejos y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 4</h4>
+                    <p>Morros y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 5</h4>
+                    <p>Boquerones y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 6</h4>
+                    <p>Croquetas y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 7</h4>
+                    <p>Tigres y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 8</h4>
+                    <p>Fingers y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Duo 9</h4>
+                    <p>Alitas y bravas</p>
+                    <span class="price">X€</span>
+                </div>
+            </div>
+            <div class="menu-category" id="combos">
+                <h3>Combos</h3>
+                <p class="category-description">Todos los combos incluyen 1 bebida</p>
+                <div class="menu-item">
+                    <h4>Combo 1</h4>
+                    <p>Hamburguesa y patatas fritas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Combo 2</h4>
+                    <p>Frankfurt y patatas fritas</p>
+                    <span class="price">X€</span>
+                </div>
+                <div class="menu-item">
+                    <h4>Combo 3</h4>
+                    <p>Bocadillo frío y patatas fritas</p>
+                    <span class="price">X€</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2><a href="https://maps.app.goo.gl/kymVzu22q2N36qvk9" target="_blank">¡Visítanos!</a></h2>
+        <p>Llámanos o envíanos un <a href="https://wa.me/34664514976" target="_blank">WhatsApp</a></p>
+    </section>
+
+    <footer>
+        © 2025 Bar Frankfurt Junior. Todos los derechos reservados.
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuToggle = document.querySelector(".menu-toggle");
+            const navLinks = document.querySelector(".nav-links");
+            const links = navLinks.querySelectorAll("a");
+
+            // Toggle menu visibility
+            menuToggle.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+
+            // Hide menu after clicking a link
+            links.forEach(link => {
+                link.addEventListener("click", () => {
+                    navLinks.classList.remove("active");
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
