@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>u0f · Proyectos</title>
+  <meta name="description" content="Portfolio de u0f: desarrollador Odoo y autor de herramientas como BlocPlus, PokeStream, Rastro y DB Editor.">
+  <meta name="theme-color" content="#07080d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307080d'/%3E%3Cpath d='M9 11v6a4 4 0 0 0 8 0v-6M21 23V13a2 2 0 0 1 2-2h1' stroke='%235ee7ff' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="Inicio"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
+    <nav>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="prompt reveal"><span class="muted">~/u0f</span> <span class="accent">$</span> whoami</p>
+      <h1 class="reveal"><span id="scramble">u0f</span></h1>
+      <p class="lead reveal">Desarrollador Odoo de día. El resto del tiempo construyo las herramientas que me faltan: editores, overlays para streaming, utilidades self-hosted y apps para mis aficiones.</p>
+      <div class="hero-meta reveal">
+        <span class="pill"><span class="dot"></span><span id="active-count">5</span> proyectos activos</span>
+        <span class="pill mono">Python · C# · JavaScript · Docker</span>
+      </div>
+      <div class="hero-cta reveal">
+        <a class="btn primary" href="#proyectos">Ver proyectos</a>
+        <a class="btn" href="https://github.com/u0f" target="_blank" rel="noopener">Perfil de GitHub ↗</a>
+      </div>
+    </section>
+
+    <section id="proyectos" class="section">
+      <div class="section-head reveal">
+        <span class="mono accent">01</span>
+        <h2>Proyectos</h2>
+        <p class="muted">Lo que tengo en marcha ahora mismo. Pulsa una tarjeta para ver más.</p>
+      </div>
+      <div id="grid" class="grid"></div>
+    </section>
+
+    <section id="sobre-mi" class="section about">
+      <div class="section-head reveal">
+        <span class="mono accent">02</span>
+        <h2>Sobre mí</h2>
+      </div>
+      <div class="about-body">
+        <div class="reveal">
+          <p>Trabajo como desarrollador Odoo, así que paso buena parte del día entre Python, modelos y vistas XML.</p>
+          <p>Fuera del trabajo me gusta resolver problemas pequeños pero molestos con software sencillo: apps sin dependencias, que arrancan rápido y que se instalan sin pelearse con nada. Muchas acaban corriendo en una Raspberry Pi o en el escritorio de alguien más.</p>
+          <p>Todo lo que hago está en abierto en GitHub. Si algo te sirve, o encuentras un fallo, abre un issue.</p>
+        </div>
+        <ul class="facts reveal">
+          <li><span class="mono muted">trabajo</span><span>Odoo · Python</span></li>
+          <li><span class="mono muted">escritorio</span><span>C# · Windows Forms</span></li>
+          <li><span class="mono muted">web</span><span>JavaScript · TypeScript · CSS</span></li>
+          <li><span class="mono muted">infra</span><span>Docker · Raspberry Pi · CasaOS</span></li>
+          <li><span class="mono muted">filosofía</span><span>pocas dependencias, cero sorpresas</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span class="mono muted">© <span id="year">2026</span> u0f</span>
+    <span class="mono muted">HTML, CSS y JS a mano · alojado en GitHub Pages</span>
+  </footer>
+
+  <dialog id="detail" aria-labelledby="d-title">
+    <button class="close" type="button" aria-label="Cerrar">✕</button>
+    <div id="d-body"></div>
+  </dialog>
+
+  <script src="main.js"></script>
+</body>
+</html>
