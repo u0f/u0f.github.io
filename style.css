@@ -165,8 +165,17 @@ main, .footer { width: min(1120px, 100% - 32px); margin-inline: auto; }
   transition: transform 0.5s cubic-bezier(.2, .8, .2, 1);
 }
 .card:hover .visual .logo { transform: translateY(-6px) scale(1.08) rotate(-3deg); }
-.glyph { color: var(--c); display: grid; place-items: center; }
-.glyph svg { width: 64px; height: 64px; }
+.monogram {
+  display: grid; place-items: center;
+  border-radius: 22px;
+  border: 1px solid color-mix(in srgb, var(--c) 50%, transparent);
+  background: color-mix(in srgb, var(--c) 18%, #0c0e16);
+  color: var(--c);
+  font: 700 2.6rem var(--mono);
+}
+.topics { display: flex; flex-wrap: wrap; gap: 8px; margin: -6px 0 18px; }
+.topics span { padding: 3px 10px; border-radius: 99px; background: color-mix(in srgb, var(--c) 12%, transparent); color: var(--c); }
+.features strong { color: var(--text); font-weight: 600; }
 
 .langbar { display: flex; height: 6px; border-radius: 99px; overflow: hidden; gap: 2px; background: rgba(255, 255, 255, 0.05); }
 .langbar span { min-width: 2px; }
@@ -174,11 +183,7 @@ main, .footer { width: min(1120px, 100% - 32px); margin-inline: auto; }
 .legend i { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
 
 /* Sobre mí */
-.about-body { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
-.about-body p { color: #c3c7d4; margin: 0 0 14px; max-width: 62ch; }
-.facts { list-style: none; margin: 0; padding: 6px 20px; border: 1px solid var(--line); border-radius: var(--radius); background: rgba(12, 14, 22, 0.7); }
-.facts li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--line); text-align: right; }
-.facts li:last-child { border-bottom: 0; }
+.about-body { color: #c3c7d4; margin: 0; max-width: 62ch; }
 
 .footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px; padding: 32px 0 40px; border-top: 1px solid var(--line); margin-top: 32px; }
 
@@ -228,7 +233,6 @@ dialog .visual.shot { aspect-ratio: auto; display: block; background: #090b12; }
 .js .reveal.in { opacity: 1; transform: none; }
 
 @media (max-width: 760px) {
-  .about-body { grid-template-columns: 1fr; gap: 24px; }
   .nav nav { gap: 14px; }
   .nav nav a:not(.nav-gh) { display: none; }
   .d-meta { margin-left: 0; width: 100%; }
