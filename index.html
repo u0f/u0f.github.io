@@ -3,21 +3,39 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>u0f · Proyectos</title>
-  <meta name="description" content="Portfolio de u0f: desarrollador Odoo y autor de herramientas como BlocPlus, PokeStream, Rastro y DB Editor.">
+  <title>Joel (u0f) · Desarrollador Odoo y proyectos open source</title>
+  <meta name="description" content="Joel (u0f), desarrollador Odoo. Herramientas open source para Windows, streaming y self-hosting, y bots de Telegram para Vinted y Wallapop.">
+  <link rel="canonical" href="https://u0f.es/">
+  <meta name="author" content="Joel (u0f)">
+  <meta name="robots" content="index, follow, max-image-preview:large">
   <meta name="theme-color" content="#07080d">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2307080d'/%3E%3Cpath d='M9 11v6a4 4 0 0 0 8 0v-6M21 23V13a2 2 0 0 1 2-2h1' stroke='%235ee7ff' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta property="og:type" content="profile">
+  <meta property="og:site_name" content="u0f">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://u0f.es/">
+  <meta property="og:title" content="Joel (u0f) · Desarrollador Odoo y proyectos open source">
+  <meta property="og:description" content="Editores, overlays para streaming, utilidades self-hosted y bots de Telegram.">
+  <meta property="og:image" content="https://u0f.es/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="u0f: proyectos de Joel, desarrollador Odoo">
+  <meta property="profile:username" content="u0f">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="preload" href="/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/style.css">
   <script>document.documentElement.classList.add('js')</script>
+  <!-- ld --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://u0f.es/#joel","name":"Joel","alternateName":"u0f","url":"https://u0f.es/","jobTitle":"Desarrollador Odoo","knowsLanguage":["es","en"],"knowsAbout":["Odoo","Python","C#","JavaScript","Docker","Bots de Telegram"],"sameAs":["https://github.com/u0f","https://t.me/aloooo54653"]},{"@type":"WebSite","@id":"https://u0f.es/#website","url":"https://u0f.es/","name":"u0f","inLanguage":"es","publisher":{"@id":"https://u0f.es/#joel"}},{"@type":"ProfilePage","@id":"https://u0f.es/#page","url":"https://u0f.es/","name":"Joel (u0f) · Desarrollador Odoo y proyectos open source","isPartOf":{"@id":"https://u0f.es/#website"},"mainEntity":{"@id":"https://u0f.es/#joel"},"dateModified":"2026-11-01T11:53:30Z","hasPart":{"@id":"https://u0f.es/#proyectos"}},{"@type":"ItemList","@id":"https://u0f.es/#proyectos","name":"Proyectos de u0f","itemListElement":[{"@type":"ListItem","position":1,"url":"https://u0f.es/proyectos/blocplus/"},{"@type":"ListItem","position":2,"url":"https://u0f.es/proyectos/pokemon-overlay/"},{"@type":"ListItem","position":3,"url":"https://u0f.es/proyectos/spicetify/"},{"@type":"ListItem","position":4,"url":"https://u0f.es/proyectos/rastro/"},{"@type":"ListItem","position":5,"url":"https://u0f.es/proyectos/db-editor/"},{"@type":"ListItem","position":6,"url":"https://u0f.es/proyectos/blandis/"}]}]}</script><!-- /ld -->
 </head>
 <body>
+  <a class="skip" href="#proyectos">Saltar al contenido</a>
   <div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Inicio"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
+    <a class="brand" href="#top"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
     <nav>
       <a href="#proyectos">Proyectos</a>
       <a href="#servicios">Servicios</a>
@@ -32,8 +50,8 @@
       <h1 class="reveal"><span id="scramble">u0f</span> <span class="realname">(Joel)</span></h1>
       <p class="lead reveal">Desarrollador Odoo de día. El resto del tiempo construyo las herramientas que me faltan: editores, overlays para streaming, utilidades self-hosted y apps para mis aficiones.</p>
       <div class="hero-meta reveal">
-        <span class="pill"><span class="dot"></span><span id="active-count">5</span> proyectos activos</span>
-        <span class="pill mono" id="stack">Python · C# · JavaScript</span>
+        <span class="pill"><span class="dot"></span><span id="active-count"><!-- count -->6<!-- /count --></span> proyectos activos</span>
+        <span class="pill mono" id="stack"><!-- stack -->C# · Python · JavaScript<!-- /stack --></span>
       </div>
       <div class="hero-cta reveal">
         <a class="btn primary" href="#proyectos">Ver proyectos</a>
@@ -47,7 +65,80 @@
         <h2>Proyectos</h2>
         <p class="muted">Lo que tengo en marcha ahora mismo. Pulsa una tarjeta para ver más.</p>
       </div>
-      <div id="grid" class="grid"></div>
+      <div id="grid" class="grid"><!-- cards -->
+    <a class="card reveal" href="/proyectos/blocplus/" data-i="0" style="--c:#8b5cf6">
+      <div class="card-inner">
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/BlocPlus/main/assets/logo.png" alt="Logo de BlocPlus" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="kind mono">C#</span>
+          <h3>BlocPlus</h3>
+          <p>Sustituto ligero del Bloc de notas de Windows: pestañas, resaltado de sintaxis, tema oscuro y sesiones. Un solo archivo C#, sin dependencias.</p>
+          <div class="langbar"><span style="width:93.2%;background:#7355dd" title="C# 93.2%"></span><span style="width:3.7%;background:#555555" title="C 3.7%"></span><span style="width:2.6%;background:#012456" title="PowerShell 2.6%"></span><span style="width:0.5%;background:#C1F12E" title="Batchfile 0.5%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 2</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T18:39:21Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="card reveal" href="/proyectos/pokemon-overlay/" data-i="1" style="--c:#ff5c7a">
+      <div class="card-inner">
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/pokemon_overlay/main/assets/pokestream-logo.png" alt="Logo de PokeStream Overlay" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="kind mono">Python</span>
+          <h3>PokeStream Overlay</h3>
+          <p>Overlays automáticos para Pokémon y OBS, desde una aplicación local con panel web en español.</p>
+          <div class="langbar"><span style="width:62%;background:#3572A5" title="Python 62%"></span><span style="width:28.5%;background:#3178c6" title="TypeScript 28.5%"></span><span style="width:4.5%;background:#000080" title="Lua 4.5%"></span><span style="width:2.5%;background:#f1e05a" title="JavaScript 2.5%"></span><span style="width:1.2%;background:#012456" title="PowerShell 1.2%"></span><span style="width:0.8%;background:#663399" title="CSS 0.8%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 1</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-11T10:38:43Z">hace 21 días</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="card reveal" href="/proyectos/spicetify/" data-i="2" style="--c:#f5a524">
+      <div class="card-inner">
+        <div class="visual"><span class="logo monogram" aria-hidden="true">S</span></div>
+        <div class="card-body">
+          <span class="kind mono">fork de spicetify/cli</span>
+          <h3>Spicetify (fork personal)</h3>
+          <p>Fork recortado y endurecido de spicetify/cli, la herramienta que modifica el cliente de escritorio de Spotify para inyectarle temas, extensiones y apps.</p>
+          <div class="langbar"><span style="width:59.3%;background:#f1e05a" title="JavaScript 59.3%"></span><span style="width:20.8%;background:#663399" title="CSS 20.8%"></span><span style="width:19.8%;background:#00ADD8" title="Go 19.8%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 1</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T19:05:32Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="card reveal" href="/proyectos/rastro/" data-i="3" style="--c:#34d399">
+      <div class="card-inner">
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/Rastro/main/src/assets/logo.png" alt="Logo de Rastro" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="kind mono">JavaScript</span>
+          <h3>Rastro</h3>
+          <p>Encuentra tus cartas de Magic en las tiendas de Cardmarket que tú elijas y descubre dónde te salen más baratas.</p>
+          <div class="langbar"><span style="width:48.7%;background:#f1e05a" title="JavaScript 48.7%"></span><span style="width:22%;background:#663399" title="CSS 22%"></span><span style="width:21.5%;background:#3572A5" title="Python 21.5%"></span><span style="width:7.5%;background:#e34c26" title="HTML 7.5%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 0</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-21T22:10:27Z">hace 11 días</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="card reveal" href="/proyectos/db-editor/" data-i="4" style="--c:#5ee7ff">
+      <div class="card-inner">
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/db_editor/master/app/static/icon.svg" alt="Logo de DB Editor" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="kind mono">Python · casaos · database-viewer</span>
+          <h3>DB Editor</h3>
+          <p>Interfaz web self-hosted para ver y editar las bases de datos SQLite de tus contenedores Docker. Multiarquitectura, con contraseña, copias de seguridad y consola SQL.</p>
+          <div class="langbar"><span style="width:54.6%;background:#3572A5" title="Python 54.6%"></span><span style="width:33.6%;background:#f1e05a" title="JavaScript 33.6%"></span><span style="width:8.9%;background:#663399" title="CSS 8.9%"></span><span style="width:2%;background:#e34c26" title="HTML 2%"></span><span style="width:1%;background:#384d54" title="Dockerfile 1%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 0</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T19:21:25Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+    <a class="card reveal" href="/proyectos/blandis/" data-i="5" style="--c:#1ed760">
+      <div class="card-inner">
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/blandis/main/favicon.svg" alt="Logo de Blandis" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="card-body">
+          <span class="kind mono">JavaScript</span>
+          <h3>Blandis</h3>
+          <p>Lanza, aplasta y fusiona blobs blanditos numerados hasta llegar a 2048. Juego gratis para el navegador con físicas de cuerpos blandos.</p>
+          <div class="langbar"><span style="width:58.8%;background:#f1e05a" title="JavaScript 58.8%"></span><span style="width:31.5%;background:#e34c26" title="HTML 31.5%"></span><span style="width:9.6%;background:#663399" title="CSS 9.6%"></span></div>
+          <div class="card-foot"><span class="mono muted">★ 2</span><span class="mono muted" title="Último push">↻ <time datetime="2026-11-01T11:53:30Z">esta hora</time></span><span class="more">Detalles →</span></div>
+        </div>
+      </div>
+    </a>
+      <!-- /cards --></div>
     </section>
 
     <section id="servicios" class="section">
@@ -68,9 +159,8 @@
             <li>Planes según el número de búsquedas activas</li>
           </ul>
           <div class="private-cta">
-            <a class="btn primary" href="https://t.me/aloooo54653" target="_blank" rel="noopener">Consultar por Telegram ↗</a>
-            <span class="tag mono">Vinted</span>
-            <span class="tag mono">Wallapop</span>
+            <a class="btn primary" href="/servicios/bots-vinted-wallapop/">Ver cómo funciona →</a>
+            <a class="btn" href="https://t.me/aloooo54653" target="_blank" rel="noopener">Consultar por Telegram ↗</a>
           </div>
         </div>
         <div class="chat" aria-hidden="true">
@@ -97,12 +187,21 @@
         <span class="mono accent">03</span>
         <h2>Sobre mí</h2>
       </div>
-      <p class="about-body reveal">Desarrollador Odoo. Todo lo que hago está en abierto en GitHub: si algo te sirve o encuentras un fallo, abre un issue.</p>
+      <div class="about-body reveal">
+        <p>Soy Joel, y en GitHub y en casi todas partes firmo como <strong>u0f</strong>. Trabajo como desarrollador Odoo, el ERP de código abierto escrito en Python.</p>
+        <p>Todo lo que hago está en abierto en <a href="https://github.com/u0f" target="_blank" rel="noopener">GitHub</a>: si algo te sirve o encuentras un fallo, abre un issue. Para encargos o para los bots, escríbeme por <a href="https://t.me/aloooo54653" target="_blank" rel="noopener">Telegram</a>.</p>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <span class="mono muted">© <span id="year">2026</span> u0f</span>
+    <nav class="footer-links" aria-label="Pie de página">
+      <a href="#proyectos">Proyectos</a>
+      <a href="/servicios/bots-vinted-wallapop/">Bots de Vinted y Wallapop</a>
+      <a href="https://github.com/u0f" rel="noopener">GitHub</a>
+      <a href="https://t.me/aloooo54653" rel="noopener">Telegram</a>
+    </nav>
   </footer>
 
   <dialog id="detail" aria-labelledby="d-title">
@@ -110,6 +209,6 @@
     <div id="d-body"></div>
   </dialog>
 
-  <script src="main.js"></script>
+  <script type="module" src="/main.js"></script>
 </body>
 </html>
