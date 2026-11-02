@@ -227,7 +227,7 @@ const shell = ({ title, description, path, image, data, body }) => `<!doctype ht
   <title>${esc(title)}</title>
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${SITE}${path}">
-  <meta name="theme-color" content="#07080d">
+  <meta name="theme-color" content="#090b10">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="u0f">
   <meta property="og:locale" content="es_ES">
@@ -241,12 +241,12 @@ const shell = ({ title, description, path, image, data, body }) => `<!doctype ht
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   ${ld(data)}
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <header class="nav">
     <a class="brand" href="/"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
@@ -254,7 +254,10 @@ const shell = ({ title, description, path, image, data, body }) => `<!doctype ht
       <a href="/#proyectos">Proyectos</a>
       <a href="/servicios/bots-vinted-wallapop/">Servicios</a>
       <a href="/#sobre-mi">Sobre mí</a>
-      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">
+        <span>GitHub</span>
+        <svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
     </nav>
   </header>
 
@@ -304,7 +307,7 @@ const projectPage = (p) => {
       ],
     },
     body: `
-    <article class="project" style="--c:${p.accent}">
+    <article class="project">
       <nav class="crumbs mono" aria-label="Migas de pan"><a href="/">Inicio</a> / <a href="/#proyectos">Proyectos</a> / <span aria-current="page">${esc(p.title)}</span></nav>
       <div class="project-head">
         ${visual(p)}

@@ -6,7 +6,7 @@
   <title>Bots de Telegram para Vinted y Wallapop: alertas de anuncios nuevos | u0f</title>
   <meta name="description" content="Bots de Telegram que vigilan tus búsquedas en Vinted y Wallapop y te avisan en cuanto aparece un anuncio nuevo. Filtros de precio, zona y envío. Funcionan 24/7.">
   <link rel="canonical" href="https://u0f.es/servicios/bots-vinted-wallapop/">
-  <meta name="theme-color" content="#07080d">
+  <meta name="theme-color" content="#090b10">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="u0f">
   <meta property="og:locale" content="es_ES">
@@ -22,6 +22,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script type="application/ld+json">
   {
@@ -52,7 +53,6 @@
 </head>
 <body>
   <a class="skip" href="#contenido">Saltar al contenido</a>
-  <div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <header class="nav">
     <a class="brand" href="/"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
@@ -60,14 +60,17 @@
       <a href="/#proyectos">Proyectos</a>
       <a href="/servicios/bots-vinted-wallapop/" aria-current="page">Servicios</a>
       <a href="/#sobre-mi">Sobre mí</a>
-      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">
+        <span>GitHub</span>
+        <svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
     </nav>
   </header>
 
   <main id="contenido" class="page">
-    <article class="page-text" style="--c:#2aabee">
+    <article class="page-text">
       <nav class="crumbs mono" aria-label="Migas de pan"><a href="/">Inicio</a> / <a href="/#servicios">Servicios</a> / <span aria-current="page">Bots de Vinted y Wallapop</span></nav>
-      <span class="kind mono">Bots de Telegram · servicio de pago</span>
+      <span class="kind mono">Bots de Telegram · Servicio de pago</span>
       <h1>Bots de Telegram para Vinted y Wallapop: alertas de anuncios nuevos</h1>
       <p class="lead">Los chollos de segunda mano duran minutos. Estos bots vigilan las búsquedas que tú elijas y te avisan por Telegram en cuanto se publica un anuncio nuevo, para que llegues antes que nadie. Funcionan 24/7.</p>
 
@@ -86,15 +89,53 @@
       </ul>
 
       <h2>Así llega un aviso</h2>
-      <div class="chat" aria-hidden="true" style="max-width:420px">
-        <div class="chat-head"><span class="chat-avatar">⚡</span><div><strong>Sniper</strong><span class="muted">bot</span></div></div>
-        <div class="bubble">
-          <span class="mono accent-tg">🔔 Nuevo anuncio · «switch oled»</span>
-          <strong>Nintendo Switch OLED blanca</strong>
-          <span class="muted">Wallapop · 180 € · con envío</span>
-          <span class="bubble-btn">Ver anuncio</span>
+      <div class="chat" aria-hidden="true" style="max-width:440px">
+        <div class="chat-head">
+          <div class="tg-avatar">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.313 4.673c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.414Z"/></svg>
+          </div>
+          <div class="chat-head-info">
+            <div class="chat-title-row">
+              <strong>Sniper Bot</strong>
+              <span class="tg-bot-tag mono">bot</span>
+            </div>
+          </div>
+          <div class="tg-head-actions">
+            <svg class="icon muted" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <svg class="icon muted" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+          </div>
         </div>
-        <span class="chat-time mono muted">hace 12 s</span>
+
+        <div class="tg-chat-body">
+          <div class="tg-date-badge mono">Hoy</div>
+
+          <div class="tg-msg-group">
+            <div class="tg-msg">
+              <div class="tg-msg-author">Sniper Bot</div>
+              <div class="tg-msg-alert mono">
+                <svg class="icon icon-bell" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                <span>Búsqueda: switch oled</span>
+              </div>
+              <div class="tg-msg-title">Nintendo Switch OLED blanca</div>
+              <div class="tg-msg-meta">Wallapop · 180 € · Con envío</div>
+              <div class="tg-msg-footer">
+                <span class="tg-msg-time mono" data-offset="0"></span>
+              </div>
+            </div>
+            <div class="tg-keyboard">
+              <span class="tg-kbd-btn">
+                <span>Ver anuncio</span>
+                <svg class="icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="tg-input-bar">
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+          <span class="tg-input-placeholder">Escribe un mensaje...</span>
+          <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+        </div>
       </div>
       <p class="muted">Ejemplo de mensaje del bot de Wallapop.</p>
 
@@ -111,7 +152,7 @@
         <dd>Siempre: los bots están en marcha 24 horas al día, 7 días a la semana.</dd>
       </dl>
 
-      <div class="d-actions">
+      <div class="d-actions" style="margin-top:32px">
         <a class="btn primary" href="https://t.me/aloooo54653" target="_blank" rel="noopener">Consultar por Telegram ↗</a>
         <a class="btn" href="/#proyectos">Ver mis proyectos open source</a>
       </div>
@@ -119,7 +160,7 @@
   </main>
 
   <footer class="footer">
-    <span class="mono muted">© 2026 u0f</span>
+    <span class="mono muted">© <span class="current-year"></span> u0f</span>
     <nav class="footer-links" aria-label="Pie de página">
       <a href="/#proyectos">Proyectos</a>
       <a href="/servicios/bots-vinted-wallapop/">Bots de Vinted y Wallapop</a>
@@ -127,5 +168,14 @@
       <a href="https://t.me/aloooo54653" rel="noopener">Telegram</a>
     </nav>
   </footer>
+  <script>
+    document.querySelectorAll('.current-year').forEach((e) => { e.textContent = new Date().getFullYear(); });
+    const tf = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' });
+    const n = Date.now();
+    document.querySelectorAll('.tg-msg-time').forEach((el) => {
+      const off = parseInt(el.dataset.offset || '0', 10);
+      el.textContent = tf.format(new Date(n + off * 60000));
+    });
+  </script>
 </body>
 </html>

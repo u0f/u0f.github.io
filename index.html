@@ -8,7 +8,7 @@
   <link rel="canonical" href="https://u0f.es/">
   <meta name="author" content="Joel (u0f)">
   <meta name="robots" content="index, follow, max-image-preview:large">
-  <meta name="theme-color" content="#07080d">
+  <meta name="theme-color" content="#090b10">
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="u0f">
   <meta property="og:locale" content="es_ES">
@@ -26,13 +26,13 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="preload" href="/fonts/sora.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/jetbrains-mono.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
   <script>document.documentElement.classList.add('js')</script>
   <!-- ld --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Person","@id":"https://u0f.es/#joel","name":"Joel","alternateName":"u0f","url":"https://u0f.es/","jobTitle":"Desarrollador Odoo","knowsLanguage":["es","en"],"knowsAbout":["Odoo","Python","C#","JavaScript","Docker","Bots de Telegram"],"sameAs":["https://github.com/u0f","https://t.me/aloooo54653"]},{"@type":"WebSite","@id":"https://u0f.es/#website","url":"https://u0f.es/","name":"u0f","inLanguage":"es","publisher":{"@id":"https://u0f.es/#joel"}},{"@type":"ProfilePage","@id":"https://u0f.es/#page","url":"https://u0f.es/","name":"Joel (u0f) · Desarrollador Odoo y proyectos open source","isPartOf":{"@id":"https://u0f.es/#website"},"mainEntity":{"@id":"https://u0f.es/#joel"},"dateModified":"2026-11-01T11:53:30Z","hasPart":{"@id":"https://u0f.es/#proyectos"}},{"@type":"ItemList","@id":"https://u0f.es/#proyectos","name":"Proyectos de u0f","itemListElement":[{"@type":"ListItem","position":1,"url":"https://u0f.es/proyectos/blocplus/"},{"@type":"ListItem","position":2,"url":"https://u0f.es/proyectos/pokemon-overlay/"},{"@type":"ListItem","position":3,"url":"https://u0f.es/proyectos/spicetify/"},{"@type":"ListItem","position":4,"url":"https://u0f.es/proyectos/rastro/"},{"@type":"ListItem","position":5,"url":"https://u0f.es/proyectos/db-editor/"},{"@type":"ListItem","position":6,"url":"https://u0f.es/proyectos/blandis/"}]}]}</script><!-- /ld -->
 </head>
 <body>
   <a class="skip" href="#proyectos">Saltar al contenido</a>
-  <div class="bg" aria-hidden="true"><span></span><span></span><span></span></div>
 
   <header class="nav">
     <a class="brand" href="#top"><span class="brand-mark">u0f</span><span class="cursor">_</span></a>
@@ -40,7 +40,10 @@
       <a href="#proyectos">Proyectos</a>
       <a href="#servicios">Servicios</a>
       <a href="#sobre-mi">Sobre mí</a>
-      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">GitHub ↗</a>
+      <a class="nav-gh" href="https://github.com/u0f" target="_blank" rel="noopener">
+        <span>GitHub</span>
+        <svg class="icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+      </a>
     </nav>
   </header>
 
@@ -61,80 +64,92 @@
 
     <section id="proyectos" class="section">
       <div class="section-head reveal">
-        <span class="mono accent">01</span>
+        <span class="section-num">01</span>
         <h2>Proyectos</h2>
-        <p class="muted">Lo que tengo en marcha ahora mismo. Pulsa una tarjeta para ver más.</p>
+        <p>Lo que tengo en marcha ahora mismo. Pulsa una tarjeta para ver más.</p>
       </div>
       <div id="grid" class="grid"><!-- cards -->
-    <a class="card reveal" href="/proyectos/blocplus/" data-i="0" style="--c:#8b5cf6">
+    <a class="card reveal" href="/proyectos/blocplus/" data-i="0">
       <div class="card-inner">
-        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/BlocPlus/main/assets/logo.png" alt="Logo de BlocPlus" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/BlocPlus/main/assets/logo.png" alt="Logo de BlocPlus" width="72" height="72" loading="lazy" decoding="async"></div>
         <div class="card-body">
-          <span class="kind mono">C#</span>
+          <div class="card-meta">
+            <span class="kind mono">C#</span>
+          </div>
           <h3>BlocPlus</h3>
           <p>Sustituto ligero del Bloc de notas de Windows: pestañas, resaltado de sintaxis, tema oscuro y sesiones. Un solo archivo C#, sin dependencias.</p>
           <div class="langbar"><span style="width:93.2%;background:#7355dd" title="C# 93.2%"></span><span style="width:3.7%;background:#555555" title="C 3.7%"></span><span style="width:2.6%;background:#012456" title="PowerShell 2.6%"></span><span style="width:0.5%;background:#C1F12E" title="Batchfile 0.5%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 2</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T18:39:21Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>2</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-10-28T18:39:21Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
-    <a class="card reveal" href="/proyectos/pokemon-overlay/" data-i="1" style="--c:#ff5c7a">
+    <a class="card reveal" href="/proyectos/pokemon-overlay/" data-i="1">
       <div class="card-inner">
-        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/pokemon_overlay/main/assets/pokestream-logo.png" alt="Logo de PokeStream Overlay" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/pokemon_overlay/main/assets/pokestream-logo.png" alt="Logo de PokeStream Overlay" width="72" height="72" loading="lazy" decoding="async"></div>
         <div class="card-body">
-          <span class="kind mono">Python</span>
+          <div class="card-meta">
+            <span class="kind mono">Python</span>
+          </div>
           <h3>PokeStream Overlay</h3>
           <p>Overlays automáticos para Pokémon y OBS, desde una aplicación local con panel web en español.</p>
           <div class="langbar"><span style="width:62%;background:#3572A5" title="Python 62%"></span><span style="width:28.5%;background:#3178c6" title="TypeScript 28.5%"></span><span style="width:4.5%;background:#000080" title="Lua 4.5%"></span><span style="width:2.5%;background:#f1e05a" title="JavaScript 2.5%"></span><span style="width:1.2%;background:#012456" title="PowerShell 1.2%"></span><span style="width:0.8%;background:#663399" title="CSS 0.8%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 1</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-11T10:38:43Z">hace 21 días</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>1</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-10-11T10:38:43Z">hace 21 días</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
-    <a class="card reveal" href="/proyectos/spicetify/" data-i="2" style="--c:#f5a524">
+    <a class="card reveal" href="/proyectos/spicetify/" data-i="2">
       <div class="card-inner">
         <div class="visual"><span class="logo monogram" aria-hidden="true">S</span></div>
         <div class="card-body">
-          <span class="kind mono">fork de spicetify/cli</span>
+          <div class="card-meta">
+            <span class="kind mono">fork de spicetify/cli</span>
+          </div>
           <h3>Spicetify (fork personal)</h3>
           <p>Fork recortado y endurecido de spicetify/cli, la herramienta que modifica el cliente de escritorio de Spotify para inyectarle temas, extensiones y apps.</p>
           <div class="langbar"><span style="width:59.3%;background:#f1e05a" title="JavaScript 59.3%"></span><span style="width:20.8%;background:#663399" title="CSS 20.8%"></span><span style="width:19.8%;background:#00ADD8" title="Go 19.8%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 1</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T19:05:32Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>1</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-10-28T19:05:32Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
-    <a class="card reveal" href="/proyectos/rastro/" data-i="3" style="--c:#34d399">
+    <a class="card reveal" href="/proyectos/rastro/" data-i="3">
       <div class="card-inner">
-        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/Rastro/main/src/assets/logo.png" alt="Logo de Rastro" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/Rastro/main/src/assets/logo.png" alt="Logo de Rastro" width="72" height="72" loading="lazy" decoding="async"></div>
         <div class="card-body">
-          <span class="kind mono">JavaScript</span>
+          <div class="card-meta">
+            <span class="kind mono">JavaScript</span>
+          </div>
           <h3>Rastro</h3>
           <p>Encuentra tus cartas de Magic en las tiendas de Cardmarket que tú elijas y descubre dónde te salen más baratas.</p>
           <div class="langbar"><span style="width:48.7%;background:#f1e05a" title="JavaScript 48.7%"></span><span style="width:22%;background:#663399" title="CSS 22%"></span><span style="width:21.5%;background:#3572A5" title="Python 21.5%"></span><span style="width:7.5%;background:#e34c26" title="HTML 7.5%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 0</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-21T22:10:27Z">hace 11 días</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>0</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-10-21T22:10:27Z">hace 11 días</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
-    <a class="card reveal" href="/proyectos/db-editor/" data-i="4" style="--c:#5ee7ff">
+    <a class="card reveal" href="/proyectos/db-editor/" data-i="4">
       <div class="card-inner">
-        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/db_editor/master/app/static/icon.svg" alt="Logo de DB Editor" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/db_editor/master/app/static/icon.svg" alt="Logo de DB Editor" width="72" height="72" loading="lazy" decoding="async"></div>
         <div class="card-body">
-          <span class="kind mono">Python · casaos · database-viewer</span>
+          <div class="card-meta">
+            <span class="kind mono">Python · casaos · database-viewer</span>
+          </div>
           <h3>DB Editor</h3>
           <p>Interfaz web self-hosted para ver y editar las bases de datos SQLite de tus contenedores Docker. Multiarquitectura, con contraseña, copias de seguridad y consola SQL.</p>
           <div class="langbar"><span style="width:54.6%;background:#3572A5" title="Python 54.6%"></span><span style="width:33.6%;background:#f1e05a" title="JavaScript 33.6%"></span><span style="width:8.9%;background:#663399" title="CSS 8.9%"></span><span style="width:2%;background:#e34c26" title="HTML 2%"></span><span style="width:1%;background:#384d54" title="Dockerfile 1%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 0</span><span class="mono muted" title="Último push">↻ <time datetime="2026-10-28T19:21:25Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>0</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-10-28T19:21:25Z">hace 4 días</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
-    <a class="card reveal" href="/proyectos/blandis/" data-i="5" style="--c:#1ed760">
+    <a class="card reveal" href="/proyectos/blandis/" data-i="5">
       <div class="card-inner">
-        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/blandis/main/favicon.svg" alt="Logo de Blandis" width="88" height="88" loading="lazy" decoding="async"></div>
+        <div class="visual"><img class="logo" src="https://raw.githubusercontent.com/u0f/blandis/main/favicon.svg" alt="Logo de Blandis" width="72" height="72" loading="lazy" decoding="async"></div>
         <div class="card-body">
-          <span class="kind mono">JavaScript</span>
+          <div class="card-meta">
+            <span class="kind mono">JavaScript</span>
+          </div>
           <h3>Blandis</h3>
           <p>Lanza, aplasta y fusiona blobs blanditos numerados hasta llegar a 2048. Juego gratis para el navegador con físicas de cuerpos blandos.</p>
           <div class="langbar"><span style="width:58.8%;background:#f1e05a" title="JavaScript 58.8%"></span><span style="width:31.5%;background:#e34c26" title="HTML 31.5%"></span><span style="width:9.6%;background:#663399" title="CSS 9.6%"></span></div>
-          <div class="card-foot"><span class="mono muted">★ 2</span><span class="mono muted" title="Último push">↻ <time datetime="2026-11-01T11:53:30Z">esta hora</time></span><span class="more">Detalles →</span></div>
+          <div class="card-foot"><span class="meta-item mono muted"><svg class="icon icon-star" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg> <span>2</span></span><span class="meta-item mono muted" title="Último push"><svg class="icon icon-refresh" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 0-9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 9 9 9.75 9.75 0 0 0 6.74-2.74L21 16"/><path d="M16 21h5v-5"/></svg> <time datetime="2026-11-01T11:53:30Z">esta hora</time></span><span class="more">Detalles →</span></div>
         </div>
       </div>
     </a>
@@ -143,13 +158,13 @@
 
     <section id="servicios" class="section">
       <div class="section-head reveal">
-        <span class="mono accent">02</span>
+        <span class="section-num">02</span>
         <h2>Servicios</h2>
-        <p class="muted">Herramientas de pago que mantengo y tengo funcionando. Si te interesan, escríbeme.</p>
+        <p>Herramientas de pago que mantengo y tengo funcionando. Si te interesan, escríbeme.</p>
       </div>
       <article class="private reveal">
         <div class="private-text">
-          <span class="kind mono">Bots de Telegram · servicio de pago</span>
+          <span class="kind mono">Bots de Telegram · Servicio de pago</span>
           <h3>Snipers de Vinted y Wallapop</h3>
           <p>Bots que vigilan las búsquedas que tú elijas y te avisan por Telegram en cuanto se publica un anuncio nuevo, para que llegues antes que nadie. Funcionan 24/7.</p>
           <ul class="features">
@@ -164,27 +179,80 @@
           </div>
         </div>
         <div class="chat" aria-hidden="true">
-          <div class="chat-head"><span class="chat-avatar">⚡</span><div><strong>Sniper</strong><span class="muted">bot</span></div></div>
-          <div class="bubble">
-            <span class="mono accent-tg">🔔 Nuevo anuncio · «switch oled»</span>
-            <strong>Nintendo Switch OLED blanca</strong>
-            <span class="muted">Wallapop · 180 € · con envío</span>
-            <span class="bubble-btn">Ver anuncio</span>
+          <div class="chat-head">
+            <div class="tg-avatar">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l-.313 4.673c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.414Z"/></svg>
+            </div>
+            <div class="chat-head-info">
+              <div class="chat-title-row">
+                <strong>Sniper Bot</strong>
+                <span class="tg-bot-tag mono">bot</span>
+              </div>
+            </div>
+            <div class="tg-head-actions">
+              <svg class="icon muted" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+              <svg class="icon muted" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+            </div>
           </div>
-          <div class="bubble">
-            <span class="mono accent-tg">🔔 Nuevo anuncio · «nike dunk»</span>
-            <strong>Nike Dunk Low Panda, talla 42</strong>
-            <span class="muted">Vinted · 55 € · muy bueno</span>
-            <span class="bubble-btn">Ver anuncio</span>
+
+          <div class="tg-chat-body">
+            <div class="tg-date-badge mono">Hoy</div>
+
+            <div class="tg-msg-group">
+              <div class="tg-msg">
+                <div class="tg-msg-author">Sniper Bot</div>
+                <div class="tg-msg-alert mono">
+                  <svg class="icon icon-bell" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                  <span>Búsqueda: switch oled</span>
+                </div>
+                <div class="tg-msg-title">Nintendo Switch OLED blanca</div>
+                <div class="tg-msg-meta">Wallapop · 180 € · Con envío</div>
+                <div class="tg-msg-footer">
+                  <span class="tg-msg-time mono" data-offset="-1"></span>
+                </div>
+              </div>
+              <div class="tg-keyboard">
+                <span class="tg-kbd-btn">
+                  <span>Ver anuncio</span>
+                  <svg class="icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="tg-msg-group">
+              <div class="tg-msg">
+                <div class="tg-msg-author">Sniper Bot</div>
+                <div class="tg-msg-alert mono">
+                  <svg class="icon icon-bell" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/></svg>
+                  <span>Búsqueda: nike dunk</span>
+                </div>
+                <div class="tg-msg-title">Nike Dunk Low Panda (Talla 42)</div>
+                <div class="tg-msg-meta">Vinted · 55 € · Muy bueno</div>
+                <div class="tg-msg-footer">
+                  <span class="tg-msg-time mono" data-offset="0"></span>
+                </div>
+              </div>
+              <div class="tg-keyboard">
+                <span class="tg-kbd-btn">
+                  <span>Ver anuncio</span>
+                  <svg class="icon" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </span>
+              </div>
+            </div>
           </div>
-          <span class="chat-time mono muted">hace 12 s</span>
+
+          <div class="tg-input-bar">
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.44 11.05-9.19 9.19a6 6 0 0 1-8.49-8.49l8.57-8.57A4 4 0 1 1 18 8.84l-8.59 8.57a2 2 0 0 1-2.83-2.83l8.49-8.48"/></svg>
+            <span class="tg-input-placeholder">Escribe un mensaje...</span>
+            <svg class="icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+          </div>
         </div>
       </article>
     </section>
 
     <section id="sobre-mi" class="section about">
       <div class="section-head reveal">
-        <span class="mono accent">03</span>
+        <span class="section-num">03</span>
         <h2>Sobre mí</h2>
       </div>
       <div class="about-body reveal">
@@ -195,7 +263,7 @@
   </main>
 
   <footer class="footer">
-    <span class="mono muted">© <span id="year">2026</span> u0f</span>
+    <span class="mono muted">© <span id="year" class="current-year"></span> u0f</span>
     <nav class="footer-links" aria-label="Pie de página">
       <a href="#proyectos">Proyectos</a>
       <a href="/servicios/bots-vinted-wallapop/">Bots de Vinted y Wallapop</a>
@@ -209,6 +277,15 @@
     <div id="d-body"></div>
   </dialog>
 
+  <script>
+    document.querySelectorAll('#year, .current-year').forEach((e) => { e.textContent = new Date().getFullYear(); });
+    const tf = new Intl.DateTimeFormat(undefined, { hour: 'numeric', minute: '2-digit' });
+    const n = Date.now();
+    document.querySelectorAll('.tg-msg-time').forEach((el) => {
+      const off = parseInt(el.dataset.offset || '0', 10);
+      el.textContent = tf.format(new Date(n + off * 60000));
+    });
+  </script>
   <script type="module" src="/main.js"></script>
 </body>
 </html>
